@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>布局居中</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .container {
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 1001px) {
+      main {
+        flex: 5;
+      }
+
+      aside {
+        flex: 1;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      .container {
+        flex-direction: column;
+      }
+
+      main {
+        flex: 100%;
+      }
+
+      aside {
+        flex: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>这里是头部</header>
+  <div class="container">
+    <aside>侧边栏导航栏</aside>
+    <main>主要视图区域宽度小于1000px侧边栏显示在头部</main>
+  </div>
+  <script>
+
+  </script>
+</body>
+
+</html>
