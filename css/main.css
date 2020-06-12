@@ -19,23 +19,25 @@ header {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.8);
   line-height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .container {
   width: 100%;
   overflow-x: hidden;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   box-sizing: border-box;
   display: flex;
+  height: auto;
   
 }
 aside{
-  /* height: auto; */
-}
-main {
-  height: 1300px;
+  height: auto;
 }
 main{
+  height: 1300px;
   background-color: bisque;
   padding-bottom: 30px;
 }
